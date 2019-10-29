@@ -8,7 +8,7 @@ object BellmanFord {
     //    val graph = Array(Node(0,Map(1->5,2->20)),Node(1,Map(2->6)),Node(2,Map()))
     val s = "0 6 11,0 1 5,1 3 3 1 4 9,2 0 3 2 1 -4,3 4 3 3 5 2,4 2 -1 4 5 -5,5 0 9 5 2 8"
     val graph = Parser.parseInput(s)
-    println(graph.deep.mkString(", "))
+    println(graph.mkString(", "))
     bellmanFord(graph,6)
 
   }
@@ -30,8 +30,8 @@ object BellmanFord {
           }
       }
     }
-    println(d.deep.mkString(", "))
-    println(p.deep.mkString(", "))
+    println(d.mkString(", "))
+    println(p.mkString(", "))
   }
 
 
