@@ -18,7 +18,7 @@ object FordFulkerson {
 
 
 
-  def bfs(graph:Array[Node], s:Int , e:Int, size: Int): Array[Int] = {
+  def bfs(graph:Array[Node], s:Int , e:Int, size: Int): (Boolean, Array[Int]) = {
     var visited = Array.fill(size){false}
     var queue = mutable.Queue[Node]()
     var parent = Array.fill(size){s}
@@ -26,7 +26,7 @@ object FordFulkerson {
     parent(s) = s
     while(queue.nonEmpty) {
       val node = queue.dequeue()
-      if(node.i==e) return findPathRec(parent,s,e)
+    //  if(node.i==e) return findPathRec(parent,s,e)
       if (!visited(node.i)) {
         node.nodes.foreach {
           case (id: Int, distance: Int) => {
@@ -37,16 +37,18 @@ object FordFulkerson {
         visited(node.i)=true
       }
     }
-    return  Array()
+    return  (visited(e),findPathRec(parent,s,e))
   }
 
 
   def fordFulkerson(graph:Array[Node], s:Int , e:Int, size: Int): Array[Node] = {
         var r  = nodesToArr(graph,size)
-        var path:Array[Int] = bfs(graph,s,e,size)
+        //var path:Array[Int] = Array()
+        //var isPath = false
+        var (isPath,path) = bfs(graph,s,e,size)
         var flows = Array.fill(size){Int.MaxValue}
         var maxFlow = 0
-        while(path.nonEmpty){
+        while(isPath){
           for (v <-1 until path.length){
               flows(path(v-1)) = r(path(v-1))(path(v))
           }
@@ -56,7 +58,9 @@ object FordFulkerson {
             r(path(v-1))(path(v)) -= min
           //  r(path(v))(path(v-1)) += min
           }
-          path = bfs(arrToNode(r),s,e,size)
+           val (isPathTmp,pathTmp) = bfs(arrToNode(r),s,e,size)
+           path= pathTmp
+          isPath = isPathTmp
      //     println(arrToNode(r).mkString(", "))
 
         }
