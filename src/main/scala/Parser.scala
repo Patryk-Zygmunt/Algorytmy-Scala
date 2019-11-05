@@ -17,4 +17,13 @@ object Parser {
   }
 
 
+  def test():Array[Node] = {
+    val s = "7 11,0 1 7 0 3 3,1 3 4 1 4 6,2 0 9 2 5 9,3 4 9 3 6 2,5 3 3 5 6 6,6 4 8"
+    //val s = "0 6 11,0 1 5,1 3 3 1 4 9,2 0 3 2 1 4,3 4 3 3 5 2,4 2 1 4 5 -5,5 0 9 5 2 8"
+
+    var graph = Parser.parseInput(s)
+    graph+:=Node(4,mutable.Map())
+    return graph
+  }
+
 }

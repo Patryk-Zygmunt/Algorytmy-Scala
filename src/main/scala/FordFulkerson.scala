@@ -26,15 +26,15 @@ object FordFulkerson {
     parent(s) = s
     while(queue.nonEmpty) {
       val node = queue.dequeue()
-    //  if(node.i==e) return findPathRec(parent,s,e)
-      if (!visited(node.i)) {
+
         node.nodes.foreach {
           case (id: Int, distance: Int) => {
+            if (!visited(id)) {
             queue += graph.find(n => n.i == id).get
             parent(id) = node.i
+            visited(id)=true
           }
         }
-        visited(node.i)=true
       }
     }
     return  (visited(e),findPathRec(parent,s,e))
@@ -45,14 +45,18 @@ object FordFulkerson {
         var r  = nodesToArr(graph,size)
         //var path:Array[Int] = Array()
         //var isPath = false
+      //  var p = Array(Array(2,0,1,4),Array(2,0,3,4),Array(2,5,3,4),Array(2,5,6,4))
         var (isPath,path) = bfs(graph,s,e,size)
         var flows = Array.fill(size){Int.MaxValue}
         var maxFlow = 0
         while(isPath){
+          println(path.mkString(","))
+
           for (v <-1 until path.length){
               flows(path(v-1)) = r(path(v-1))(path(v))
           }
           var min = flows.min
+          println(min)
           maxFlow += min
           for (v <-1 until path.length){
             r(path(v-1))(path(v)) -= min
@@ -85,12 +89,11 @@ object FordFulkerson {
 
   def arrToNode(arr:Array[Array[Int]]): Array[Node] = {
     var graph = Array[Node]()
-    for(i<-0 until arr.length) {
+    for(i<-arr.indices) {
       var n = Node(i, mutable.Map())
-      for (j <- 1 until arr.length) {
+      for (j <- arr.indices) {
         if (arr(i)(j) != null && arr(i)(j) > 0) {
           n.nodes+=(j->arr(i)(j))
-
         }
       }
       graph+:=n
