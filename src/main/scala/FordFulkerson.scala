@@ -9,8 +9,10 @@ object FordFulkerson {
 
     var graph = Parser.parseInput(s)
     graph+:=Node(4,mutable.Map())
-  //  println(graph.mkString("\n"))
- fordFulkerson(graph,2,4,7).mkString(", ")
+    println(FordFulkerson.nodesToArr(graph,7).map(_.mkString("{",",","}")).mkString("\n"))
+
+    //  println(graph.mkString("\n"))
+// fordFulkerson(graph,2,4,7).mkString(", ")
   //  println(bfs(graph,0,5,6).mkString(", "))
  //   println(nodesToArr(graph,6).map(_.mkString(", ")).mkString("\n"))
   //  println(arrToNode(nodesToArr(graph,6)).mkString("\n"))
