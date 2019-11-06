@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp
+iostream
+-
+climits
+-
+cstring
+-
+queue
+-
+
+/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp
+iostream
+-
+cstdio
+-
+vector
+-
+climits
+-
+

@@ -1,0 +1,4 @@
+ToolSet: 3.0.7 (local)@C:\bin\cygwin
+Options: 
+
+Options:-DCMAKE_CXX_COMPILER=C:/bin/cygwin/bin/g++.exe
