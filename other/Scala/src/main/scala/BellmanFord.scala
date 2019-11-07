@@ -1,7 +1,5 @@
 object BellmanFord {
   //http://algorytmika.wikidot.com/bellman-ford
-  //https://github.com/mission-peace/interview/blob/master/C%2B%2B/Graph%20Algorithms/Single%20Shortest%20Path%20Bellman%20Ford%20Algorithm.cpp
-  //https://github.com/thinkphp/bellman-ford/blob/master/bellmanford.vector.cpp
   //https://eduinf.waw.pl/inf/alg/001_search/0138a.php
   def main(args: Array[String]): Unit = {
 
