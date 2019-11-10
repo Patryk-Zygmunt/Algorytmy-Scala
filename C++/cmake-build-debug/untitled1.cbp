@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="untitled1">
-				<Option output="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="untitled1/fast">
-				<Option output="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,30 +63,36 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp">
+		<Unit filename="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp">
 			<Option target="untitled1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp">
 			<Option target="untitled1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -6,23 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp
+/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp
+random
+-
 iostream
 -
-climits
--
-cstring
--
-queue
--
-
-/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp
-iostream
--
-cstdio
--
-vector
--
-climits
+omp.h
 -
 

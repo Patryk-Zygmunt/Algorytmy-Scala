@@ -13,7 +13,7 @@ void fill(int *tab, int v, int size) {
 }
 
 
-int main3() {
+int main5() {
     const int INF = INT_MAX;
     const int size = 6;
     int graph[size][size] = {

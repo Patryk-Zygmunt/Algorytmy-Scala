@@ -1,4 +1,4 @@
-C:\Users\ComarchDev\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=C:/bin/cygwin/bin/g++.exe -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++
+C:\Users\Aspire\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug
+-- Build files have been written to: /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug

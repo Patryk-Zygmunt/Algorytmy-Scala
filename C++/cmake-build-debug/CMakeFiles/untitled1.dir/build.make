@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/ComarchDev/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Aspire/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/ComarchDev/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Aspire/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled1.dir/depend.make
@@ -59,43 +59,73 @@ include CMakeFiles/untitled1.dir/flags.make
 
 CMakeFiles/untitled1.dir/main.cpp.o: CMakeFiles/untitled1.dir/flags.make
 CMakeFiles/untitled1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/main.cpp.o"
-	C:/bin/cygwin/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/main.cpp.o -c /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/main.cpp.o -c /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp
 
 CMakeFiles/untitled1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/main.cpp.i"
-	C:/bin/cygwin/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp > CMakeFiles/untitled1.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp > CMakeFiles/untitled1.dir/main.cpp.i
 
 CMakeFiles/untitled1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/main.cpp.s"
-	C:/bin/cygwin/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp -o CMakeFiles/untitled1.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp -o CMakeFiles/untitled1.dir/main.cpp.s
 
 CMakeFiles/untitled1.dir/ff.cpp.o: CMakeFiles/untitled1.dir/flags.make
 CMakeFiles/untitled1.dir/ff.cpp.o: ../ff.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/ff.cpp.o"
-	C:/bin/cygwin/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/ff.cpp.o -c /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/ff.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/ff.cpp.o -c /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp
 
 CMakeFiles/untitled1.dir/ff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/ff.cpp.i"
-	C:/bin/cygwin/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp > CMakeFiles/untitled1.dir/ff.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp > CMakeFiles/untitled1.dir/ff.cpp.i
 
 CMakeFiles/untitled1.dir/ff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/ff.cpp.s"
-	C:/bin/cygwin/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp -o CMakeFiles/untitled1.dir/ff.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp -o CMakeFiles/untitled1.dir/ff.cpp.s
+
+CMakeFiles/untitled1.dir/omp.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/omp.cpp.o: ../omp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/omp.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/omp.cpp.o -c /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp
+
+CMakeFiles/untitled1.dir/omp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/omp.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp > CMakeFiles/untitled1.dir/omp.cpp.i
+
+CMakeFiles/untitled1.dir/omp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/omp.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp -o CMakeFiles/untitled1.dir/omp.cpp.s
+
+CMakeFiles/untitled1.dir/circle.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/circle.cpp.o: ../circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled1.dir/circle.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/circle.cpp.o -c /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp
+
+CMakeFiles/untitled1.dir/circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/circle.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp > CMakeFiles/untitled1.dir/circle.cpp.i
+
+CMakeFiles/untitled1.dir/circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/circle.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp -o CMakeFiles/untitled1.dir/circle.cpp.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
 "CMakeFiles/untitled1.dir/main.cpp.o" \
-"CMakeFiles/untitled1.dir/ff.cpp.o"
+"CMakeFiles/untitled1.dir/ff.cpp.o" \
+"CMakeFiles/untitled1.dir/omp.cpp.o" \
+"CMakeFiles/untitled1.dir/circle.cpp.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1.exe: CMakeFiles/untitled1.dir/main.cpp.o
 untitled1.exe: CMakeFiles/untitled1.dir/ff.cpp.o
+untitled1.exe: CMakeFiles/untitled1.dir/omp.cpp.o
+untitled1.exe: CMakeFiles/untitled1.dir/circle.cpp.o
 untitled1.exe: CMakeFiles/untitled1.dir/build.make
 untitled1.exe: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable untitled1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +138,6 @@ CMakeFiles/untitled1.dir/clean:
 .PHONY : CMakeFiles/untitled1.dir/clean
 
 CMakeFiles/untitled1.dir/depend:
-	cd /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++ /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++ /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug /cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++ /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++ /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug /cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled1.dir/depend
 

@@ -83,7 +83,7 @@ int fordFulkerson(int graph[size][size], int s, int t)
 }
 
 
-int main(){
+int main5e(){
    int graph[size][size] = {
    {0,7,0,3,0,0,0},
            {0,0,0,4,6,0,0},
@@ -95,6 +95,6 @@ int main(){
    };
 
    cout<<fordFulkerson(graph,2,4);
-
+    return 0;
 
 }

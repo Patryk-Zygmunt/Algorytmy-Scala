@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/ff.cpp" "/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles/untitled1.dir/ff.cpp.o"
-  "/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/main.cpp" "/cygdrive/c/Users/ComarchDev/CLionProjects/Algorytmy/C++/cmake-build-debug/CMakeFiles/untitled1.dir/main.cpp.o"
+  "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/circle.cpp.o"
+  "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/ff.cpp.o"
+  "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/main.cpp.o"
+  "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/omp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/bin/cygwin/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "/usr/bin/c++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "7.4.0")
@@ -20,9 +20,9 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "/usr/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/bin/cygwin/bin/gcc-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "/usr/bin/gcc-ar.exe")
 set(CMAKE_RANLIB "/usr/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/bin/cygwin/bin/gcc-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/gcc-ranlib.exe")
 set(CMAKE_LINKER "/usr/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
