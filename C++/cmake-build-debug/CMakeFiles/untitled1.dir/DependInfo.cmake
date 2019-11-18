@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/circle.cpp.o"
   "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/ff.cpp.o"
   "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/main.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/main.cpp.o"
+  "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/makro.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/makro.cpp.o"
   "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/omp.cpp" "/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/cmake-build-debug/CMakeFiles/untitled1.dir/omp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -56,7 +56,7 @@ double circleParallel(){
     cout<<pi<<"\n";
 }
 
-int main(){
+int main22(){
     double start;
     double end;
     start = omp_get_wtime();

@@ -7,5 +7,7 @@ CMakeFiles/untitled1.dir/ff.cpp.o: ../ff.cpp
 
 CMakeFiles/untitled1.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/untitled1.dir/makro.cpp.o: ../makro.cpp
+
 CMakeFiles/untitled1.dir/omp.cpp.o: ../omp.cpp
 

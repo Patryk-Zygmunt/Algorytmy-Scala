@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/circle.cpp
-random
--
+/cygdrive/c/Users/Aspire/IdeaProjects/Algorytmy-Scala/C++/ff.cpp
 iostream
 -
-omp.h
+climits
+-
+cstring
+-
+queue
+-
+fstream
 -
 

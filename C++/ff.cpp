@@ -4,6 +4,8 @@
 #include <climits>
 #include <cstring>
 #include <queue>
+#include <fstream>
+
 using namespace std;
 #define size 7
 
@@ -83,17 +85,24 @@ int fordFulkerson(int graph[size][size], int s, int t)
 }
 
 
-int main5e(){
-   int graph[size][size] = {
-   {0,7,0,3,0,0,0},
-           {0,0,0,4,6,0,0},
-           {9,0,0,0,0,9,0},
-           {0,0,0,0,9,0,2},
-           {0,0,0,0,0,0,0},
-           {0,0,0,3,0,0,6},
-           {0,0,0,0,8,0,0}
-   };
 
+
+int main(){
+   int graph[size][size] ;
+
+    ifstream fp;
+    // open the file stream
+    fp.open("main.cpp");
+    if (!fp) {
+        cout << "Error, file couldn't be opened" << endl;
+        return 1;
+    }
+    for (int row = 0; row < size; row++) {
+        for (int column = 0; column < size; column++) {
+            fp >> graph[row][column];
+        }
+    }
+fp.close();
    cout<<fordFulkerson(graph,2,4);
     return 0;
 

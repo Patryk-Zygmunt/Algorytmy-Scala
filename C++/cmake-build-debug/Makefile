@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+makro.o: makro.cpp.o
+
+.PHONY : makro.o
+
+# target to build an object file
+makro.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/makro.cpp.o
+.PHONY : makro.cpp.o
+
+makro.i: makro.cpp.i
+
+.PHONY : makro.i
+
+# target to preprocess a source file
+makro.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/makro.cpp.i
+.PHONY : makro.cpp.i
+
+makro.s: makro.cpp.s
+
+.PHONY : makro.s
+
+# target to generate assembly for a file
+makro.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/makro.cpp.s
+.PHONY : makro.cpp.s
+
 omp.o: omp.cpp.o
 
 .PHONY : omp.o
@@ -249,6 +276,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... makro.o"
+	@echo "... makro.i"
+	@echo "... makro.s"
 	@echo "... omp.o"
 	@echo "... omp.i"
 	@echo "... omp.s"
