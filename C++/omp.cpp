@@ -1,5 +1,6 @@
 #include <omp.h>
 #include <iostream>
+#define  DXX 0.00000001
 
 using namespace std;
 
@@ -11,7 +12,7 @@ double fun(double x) {
 
 double d() {
 	double a = 0, b = 1;
-	double dx = 0.0001,w=0,m;
+	double dx = DXX,w=0,m;
 	m = (b - a) / dx;
 	for (long i = 0; i < m; i=i+1)
 		w += fun(a + i * dx) * dx;
@@ -21,10 +22,19 @@ double d() {
 }
 
 
-int main67() {
- //  cout<< d();
-	double a = 0, b = 1;
-	double dx = 0.000001;
+int main222() {
+    double start;
+    double end;
+    start = omp_get_wtime();
+    double ddd = d();
+    end = omp_get_wtime();
+    cout<<(end - start)<<"\n";
+
+  cout<< ddd<<endl;
+    start = omp_get_wtime();
+
+    double a = 0, b = 1;
+	double dx = DXX;
 	long  m = (b - a) / dx;
 	double tab[4] = { 0,0,0,0 };
 #pragma omp parallel
@@ -46,15 +56,18 @@ int main67() {
 
 
     cout << "\n";
-
+    end = omp_get_wtime();
+    cout<<(end - start)<<"\n";
+    start = omp_get_wtime();
 
     double sum = 0;
 #pragma omp parallel for reduction(+:sum)
     for (long i = 0; i < m; i++)
         sum += fun(a + i * dx) * dx;
 
-    cout<<sum;
-
+    cout<<sum<<endl;
+    end = omp_get_wtime();
+    cout<<(end - start)<<"\n";
 
 
 	return 0;

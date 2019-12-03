@@ -7,7 +7,7 @@
 #include <omp.h>
 
 #define RADIUS 4800
-#define SHOOTS 1000000000
+#define SHOOTS 10000000
 
 using namespace std;
 
@@ -56,7 +56,7 @@ double circleParallel(){
     cout<<pi<<"\n";
 }
 
-int main22(){
+int mai23n(){
     double start;
     double end;
     start = omp_get_wtime();
