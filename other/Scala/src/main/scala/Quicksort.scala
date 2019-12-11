@@ -3,31 +3,6 @@ import scala.collection.mutable.ArrayBuffer
 
 object Quicksort {
 
-
-
-  def swap(arr:mutable.ArrayBuffer[Int] ,i:Int, j:Int):Unit ={
-    var tmp = arr(i)
-    arr(i) = arr(j)
-    arr(j) = tmp
-  }
-
-
-  def quciksort(arr:mutable.ArrayBuffer[Int], l :Int,h:Int):Unit = {
-    if (l>=h) return
-    var pivot = arr(h)
-    var i=l
-    for (j<- l to h){
-      if(arr(j)<=pivot && i!=j ){
-        i+=1
-        swap(arr,i,j)
-      }
-    }
-
-    quciksort(arr,l,i-1)
-    quciksort(arr,i+1,h)
-  }
-
-
   def quciksortFun(arr:mutable.ArrayBuffer[Int]):mutable.ArrayBuffer[Int] = {
     if(arr.length <= 1) return arr
 
@@ -43,10 +18,33 @@ object Quicksort {
   }
 
 
+  def swap(arr:mutable.ArrayBuffer[Int] ,i:Int, j:Int):Unit ={
+    var tmp = arr(i)
+    arr(i) = arr(j)
+    arr(j) = tmp
+  }
+
+
+  def quciksort(arr:mutable.ArrayBuffer[Int], l :Int,h:Int):Unit = {
+    if (l < h)  {
+      var pivot = arr(h)
+      var act = l
+      for (i <- l until h) {
+        if (arr(i) < pivot) {
+          swap(arr, act, i)
+          act += 1
+        }
+      }
+      swap(arr, act, h)
+      quciksort(arr, l, act - 1)
+      quciksort(arr, act + 1, h)
+    }
+  }
+
   def main(args: Array[String]): Unit = {
-    var arr = mutable.ArrayBuffer(1,8,3,9,4,5,7)
-  //  quciksort(arr,0,6)
-    print(quciksortFun(arr).mkString(","))
+    var arr = mutable.ArrayBuffer(1,8,3,9,4,5,7,344,22,11)
+   quciksort(arr,0,arr.length-1)
+    print(arr.mkString(","))
   }
 
 }
