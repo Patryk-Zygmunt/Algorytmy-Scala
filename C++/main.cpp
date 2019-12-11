@@ -107,7 +107,7 @@ void blflist(int    graph[size][size]){
     }
 
 
-int main() {
+int mainaaaa() {
     ///lista krawędzi [ilość krawędzi][3][skąd, dokąd, waga]
 
 

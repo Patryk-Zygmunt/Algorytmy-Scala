@@ -73,7 +73,7 @@ int fordFulkerson(int graph[size][size], int s, int t)
 int main34(){
 
     ifstream fp;
-    fp.open("C:\\Users\\Aspire\\IdeaProjects\\Algorytmy-Scala\\C++\\graph");
+    fp.open(R"(C:\Users\Aspire\IdeaProjects\Algorytmy-Scala\C++\graph)");
     if (!fp) {
         cout << "Error, file couldn't be opened" << endl;
         return 1;
