@@ -35,28 +35,33 @@ void quicksort(int* arr, int l, int h){
 }
 
 void qucikParrel(int* arr,int size){
-    int threads = 2;
+    int threads = 4;
     int n = size/threads;
-    int   parts[threads];
+    int   parts[threads-1];
     int   split[threads];
     int idx = 0;
     for(int i=0;i<size-1;i=i+n){
         if(i+n >size-1){
-           // parts[idx] = partSort(arr, i,size-1);
             split[idx] = size-1;
         }
         else {
-            parts[idx] = partSort(arr, i, i + n);
             split[idx] = i+n;
         }
         ++idx;
         }
+
+    parts[idx] = partSort(arr, 0,split[1]);
+    for(int i = 1;i<threads;i=i+2){
+        parts[idx] = partSort(arr, split[i-1]+1,split[i]);
+    }
     for(int i = 0;i< size;i++){
         std::cout<<arr[i]<<",";
     }
     std::cout<<std::endl;
-    quicksort(arr,0,parts[0]);
+    quicksort(arr,0,parts[0]-1);
     quicksort(arr,parts[0]+1,split[1]);
+    quicksort(arr,split[1]+1,parts[1]-1);
+    quicksort(arr,parts[1]+1,split[2]);
 //    for(int i=1;i<threads;i++){
 //       // quicksort(arr,split[i-1],parts[i]-1);
 //        quicksort(arr,parts[i]+1,split[i]);
