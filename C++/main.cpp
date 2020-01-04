@@ -74,8 +74,7 @@ void blflist(int    graph[size][size]){
             }
         }
     }
-        for (int i = 0; i < edges; i++)
-          //  cout<<lst[i][0]<<" "<<lst[i][1]<<" "<<lst[i][2]<<endl;
+        for (int i = 0; i <= size; i++)
         for (int n = 1; n <= size; n++) {
             for (int e = 0; e < edges; e++) {
                 int from = lst[e][0];
@@ -86,7 +85,7 @@ void blflist(int    graph[size][size]){
                     cost[to] = cost[from] + costE;
                     parent[to] = from;
 
-                    if (n ==size)
+                    if (i ==size)
                     {
                         cout << "Cykl ujemny";
                         return ;
@@ -107,9 +106,7 @@ void blflist(int    graph[size][size]){
     }
 
 
-int mainaaaa() {
-    ///lista krawędzi [ilość krawędzi][3][skąd, dokąd, waga]
-
+int muuuuain() {
 
     int graph[size][size] = {
             {0, 5,  0,  0, 0, 0},

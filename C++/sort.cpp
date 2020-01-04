@@ -5,6 +5,9 @@
 #include <iostream>
 #include <omp.h>
 #include <random>
+#include <queue>
+#include <cstring>
+
 
 void swap(int* arr, int i, int j){
     int tmp = arr[i];
@@ -34,58 +37,140 @@ void quicksort(int* arr, int l, int h){
         }
 }
 
-void qucikParrel(int* arr,int size){
-    int threads = 4;
+
+void quickPart(int* arr, int size){
+    const int threads = 4;
     int n = size/threads;
-    int   parts[threads-1];
-    int   split[threads];
+    int   parts[threads+1];
+    std::queue <int> q;
+    q.push(0);
+    q.push(size-1);
     int idx = 0;
-    for(int i=0;i<size-1;i=i+n){
-        if(i+n >size-1){
-            split[idx] = size-1;
+    parts[threads] = 0;
+    parts[threads-1] = size-1;
+
+    while (idx < threads-1){
+        int s = q.front();
+        q.pop();
+        int e =  q.front();
+        q.pop();
+
+        parts[idx] = partSort(arr,s,e);
+        if((idx %4 == 0 && parts[idx]!=s) || parts[idx]==e) {
+            q.push(s);
+            q.push(parts[idx]-1);
+            q.push(parts[idx]-1);
+            q.push(e);
         }
         else {
-            split[idx] = i+n;
-        }
-        ++idx;
-        }
+            q.push(parts[idx]+1);
+            q.push(e);
+            q.push(s);
+            q.push(parts[idx]+1);
 
-    parts[idx] = partSort(arr, 0,split[1]);
-    for(int i = 1;i<threads;i=i+2){
-        parts[idx] = partSort(arr, split[i-1]+1,split[i]);
+        }
+       idx++;
     }
-    for(int i = 0;i< size;i++){
-        std::cout<<arr[i]<<",";
-    }
-    std::cout<<std::endl;
-    quicksort(arr,0,parts[0]-1);
-    quicksort(arr,parts[0]+1,split[1]);
-    quicksort(arr,split[1]+1,parts[1]-1);
-    quicksort(arr,parts[1]+1,split[2]);
-//    for(int i=1;i<threads;i++){
-//       // quicksort(arr,split[i-1],parts[i]-1);
-//        quicksort(arr,parts[i]+1,split[i]);
+
+    quicksort(parts,0,threads);
+//    for(int i = 0;i< threads+1;i++){
+//        std::cout<<parts[i]<<",";
 //    }
+//    std::cout<<std::endl;
+   for(int i=0;i<threads;i++){
+       if(i%2==0)
+           quicksort(arr,parts[i],parts[i+1]-1);
+       else
+       quicksort(arr,parts[i]+1,parts[i+1]);
+    }
 
 }
 
 
-int main(){
-    int size = 10;
-    int arr[10] ;//= {970,360,350,172,138,399,924,563,687,525};
+void quickPartParrel(int* arr, int size){
+    const int threads = 4;
+    int n = size/threads;
+    int   parts[threads+1];
+    std::queue <int> q;
+    q.push(0);
+    q.push(size-1);
+    int idx = 0;
+    parts[threads] = 0;
+    parts[threads-1] = size-1;
+
+    while (idx < threads-1){
+        int s = q.front();
+        q.pop();
+        int e =  q.front();
+        q.pop();
+
+        parts[idx] = partSort(arr,s,e);
+        if((idx %4 == 0 && parts[idx]!=s) || parts[idx]==e) {
+            q.push(s);
+            q.push(parts[idx]-1);
+            q.push(parts[idx]-1);
+            q.push(e);
+        }
+        else {
+            q.push(parts[idx]+1);
+            q.push(e);
+            q.push(s);
+            q.push(parts[idx]+1);
+
+        }
+        idx++;
+    }
+
+    quicksort(parts,0,threads);
+//    for(int i = 0;i< threads+1;i++){
+//        std::cout<<parts[i]<<",";
+//    }
+//    std::cout<<std::endl;
+#pragma omp parallel
+    {
+        int i = omp_get_thread_num();
+        if(i%2==0)
+            quicksort(arr,parts[i],parts[i+1]-1);
+        else
+            quicksort(arr,parts[i]+1,parts[i+1]);
+    }
+
+}
+
+
+
+
+int maineeeeee(){
+    int size = 1000000 ;
+    double start,end;
+    int* arr = new int[size] ;//= {970,360,350,172,138,399,924,563,687,525};
+    int* arr1 = new int[size] ;//= {970,360,350,172,138,399,924,563,687,525};
+    int* arr2 = new int[size] ;//= {970,360,350,172,138,399,924,563,687,525};
     std::random_device rd;
     std::mt19937 mt(rd());
     std::uniform_real_distribution<double> dist(0,1000);
     for(int i = 0;i< size;i++){
         arr[i] = floor(dist(mt));
+        arr1[i] = arr[i];
+        arr2[i] = arr[i];
     }
     for(int i = 0;i< size;i++){
         std::cout<<arr[i]<<",";
     }
     std::cout<<std::endl;
-    qucikParrel(arr,size);
-    //partSort(arr,0,size-1);
+    start = omp_get_wtime();
+    quickPart(arr, size);
+    end = omp_get_wtime();
+    std::cout<<(end - start)<<"\n";
+    start = omp_get_wtime();
+    quicksort(arr1,0, size-1);
+    end = omp_get_wtime();
+    std::cout<<(end - start)<<"\n";
+    start = omp_get_wtime();
+    quickPartParrel(arr2, size);
+    end = omp_get_wtime();
+    std::cout<<(end - start)<<"\n";
     for(int i = 0;i< size;i++){
-        std::cout<<arr[i]<<",";
+     //   std::cout<<arr2[i]<<",";
     }
 }
